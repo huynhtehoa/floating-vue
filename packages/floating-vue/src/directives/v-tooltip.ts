@@ -56,6 +56,9 @@ function ensureDirectiveApp () {
 
   directiveApp = createApp({
     name: 'VTooltipDirectiveApp',
+    compatConfig: {
+      RENDER_FUNCTION: false,
+    },
     setup () {
       return {
         directives,

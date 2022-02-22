@@ -34,7 +34,9 @@ function defaultPropFactory (prop: string) {
 
 export default () => defineComponent({
   name: 'VPopper',
-
+  compatConfig: {
+    RENDER_FUNCTION: false,
+  },
   props: {
     theme: {
       type: String,
